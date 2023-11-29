@@ -11,7 +11,7 @@ entity BCDCNTR is
     CLK     : in  std_logic;
     CIN     : in  std_logic;
     COUT    : out std_logic;
-    BCD_OUT : out int0_9
+    BCD_OUT : inout int0_9
   );
 end BCDCNTR;
 

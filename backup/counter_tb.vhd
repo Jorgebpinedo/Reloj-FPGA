@@ -18,7 +18,7 @@ architecture BEHAVIORAL of COUNTER_TB is
       RESET_N : in  std_logic;
       CLK     : in  std_logic;
       CE_N    : in  std_logic;
-      BCD_OUT : out int0_9_vector(DIGITS - 1 downto 0)
+      BCD_OUT : inout int0_9_vector(DIGITS - 1 downto 0)
     );
   end component;
 
@@ -65,8 +65,8 @@ begin
     end loop;
     ce_n <= '0' after 0.25 * clk_period;
     wait until clk = '1';
-    ce_n <= '1' after 0.25 * clk_period;
-    for i in 1 to 200 loop
+    ce_n <= '1' after 2 * clk_period;
+    for i in 1 to 1000000 loop
       wait until clk = '1';
     end loop;
 
