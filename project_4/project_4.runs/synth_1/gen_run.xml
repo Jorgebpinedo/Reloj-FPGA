@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1701714085" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fpga_reloj.dcp">
+  <File Type="PA-TCL" Name="fpga_reloj.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fpga_reloj_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="fpga_reloj_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fpga_reloj.vds"/>
+  <File Type="RDS-UTIL" Name="fpga_reloj_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fpga_reloj_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fpga_reloj.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fpga_reloj_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fpga_reloj_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/common.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/common.vhd"/>
+        <Attr Name="ImportTime" Val="1701367706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/Cambiar_hora.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Cambiar_hora.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/Counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Counter.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/GenOndaCuadrada.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/GenOndaCuadrada.vhd"/>
+        <Attr Name="ImportTime" Val="1701302697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/Int09ToBcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Int09ToBcd.vhd"/>
+        <Attr Name="ImportTime" Val="1700924042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/TEMP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/TEMP.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/VisualizadorBlinker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/VisualizadorBlinker.vhd"/>
+        <Attr Name="ImportTime" Val="1701342970"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/bcd_temp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bcd_temp.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/bcdcntr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bcdcntr.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/bin2seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bin2seg.vhd"/>
+        <Attr Name="ImportTime" Val="1701341036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/blinker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/blinker.vhd"/>
+        <Attr Name="ImportTime" Val="1701288508"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/edgedtctr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/edgedtctr.vhd"/>
+        <Attr Name="ImportTime" Val="1700926737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/fsm.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fsm.vhd"/>
+        <Attr Name="ImportTime" Val="1701368131"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/input_cndtnr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/input_cndtnr.vhd"/>
+        <Attr Name="ImportTime" Val="1700926737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/muxer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/muxer.vhd"/>
+        <Attr Name="ImportTime" Val="1700768506"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/scanner.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/scanner.vhd"/>
+        <Attr Name="ImportTime" Val="1700768506"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/synchrnzr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/synchrnzr.vhd"/>
+        <Attr Name="ImportTime" Val="1700926737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/timer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/timer.vhd"/>
+        <Attr Name="ImportTime" Val="1700924463"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/visualizer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/visualizer.vhd"/>
+        <Attr Name="ImportTime" Val="1701340506"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/fpga_reloj.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fpga_reloj.vhd"/>
+        <Attr Name="ImportTime" Val="1701363164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/fsm_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fsm_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1701367897"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/reset2s.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/reset2s.vhd"/>
+        <Attr Name="ImportTime" Val="1701267956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/top.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/top.vhd"/>
+        <Attr Name="ImportTime" Val="1701349161"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/301123 backup/top_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/top_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1701343098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga_reloj"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1701274534"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/fpga_reloj.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
