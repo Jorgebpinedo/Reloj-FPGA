@@ -1,3 +1,5 @@
+-- Integra el visualizador y el blinker en una única entidad
+-- Añade los artefactos necesarios para crear interfaces cómodas: GenOndaCuadrada e Int09ToBcd
 library ieee;
 use ieee.std_logic_1164.all;
 

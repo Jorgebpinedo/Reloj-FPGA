@@ -3,18 +3,18 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Dec  4 19:21:29 2023
-# Process ID: 9652
-# Current directory: C:/FPGA/project_4/project_4.runs/synth_1
+# Start of session at: Sat Dec 23 18:04:47 2023
+# Process ID: 8712
+# Current directory: C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log fpga_reloj.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_reloj.tcl
-# Log file: C:/FPGA/project_4/project_4.runs/synth_1/fpga_reloj.vds
-# Journal file: C:/FPGA/project_4/project_4.runs/synth_1\vivado.jou
+# Log file: C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/synth_1/fpga_reloj.vds
+# Journal file: C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/synth_1\vivado.jou
 # Running On: Jorge, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 8356 MB
 #-----------------------------------------------------------
 source fpga_reloj.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 453.121 ; gain = 184.633
-Command: read_checkpoint -auto_incremental -incremental C:/FPGA/project_4/project_4.srcs/utils_1/imports/synth_1/fpga_reloj.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/FPGA/project_4/project_4.srcs/utils_1/imports/synth_1/fpga_reloj.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 451.320 ; gain = 183.473
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/utils_1/imports/synth_1/fpga_reloj.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/utils_1/imports/synth_1/fpga_reloj.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top fpga_reloj -part xc7a100tcsg324-1
 Starting synth_design
@@ -25,155 +25,155 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23536
+INFO: [Synth 8-7075] Helper process launched with PID 3364
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1309.566 ; gain = 440.746
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1308.176 ; gain = 439.848
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'fpga_reloj' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'fpga_reloj' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:18]
 	Parameter MODULO bound to: 100000001 - type: integer 
-INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:6' bound to instance 'segundero1' of component 'TIMER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'TIMER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:17]
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:13' bound to instance 'segundero1' of component 'TIMER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'TIMER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:24]
 	Parameter MODULO bound to: 100000001 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'TIMER' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:17]
-INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:23' bound to instance 'sync_modo1' of component 'INPUT_CNDTNR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'INPUT_CNDTNR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:32]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:23' bound to instance 'synchro1' of component 'SYNCHRNZR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:32]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:23' bound to instance 'edgedtctr1' of component 'EDGEDTCTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'INPUT_CNDTNR' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:32]
-INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:23' bound to instance 'sync_pausar_reanudar1' of component 'INPUT_CNDTNR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:98]
-INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:23' bound to instance 'sync_chorag1' of component 'INPUT_CNDTNR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:106]
-INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:23' bound to instance 'sync_reset_button1' of component 'INPUT_CNDTNR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:114]
-INFO: [Synth 8-3491] module 'fsm' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:7' bound to instance 'fsm1' of component 'fsm' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'fsm' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'TIMER' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:24]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:6' bound to instance 'sync_modo1' of component 'INPUT_CNDTNR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'INPUT_CNDTNR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:15]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:9' bound to instance 'synchro1' of component 'SYNCHRNZR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/synchrnzr.vhd:18]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:10' bound to instance 'edgedtctr1' of component 'EDGEDTCTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/edgedtctr.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'INPUT_CNDTNR' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:15]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:6' bound to instance 'sync_pausar_reanudar1' of component 'INPUT_CNDTNR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:98]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:6' bound to instance 'sync_chorag1' of component 'INPUT_CNDTNR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:106]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/input_cndtnr.vhd:6' bound to instance 'sync_reset_button1' of component 'INPUT_CNDTNR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:114]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:7' bound to instance 'fsm1' of component 'fsm' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:16]
 	Parameter DIGITS bound to: 6 - type: integer 
 	Parameter MODULO bound to: 100000001 - type: integer 
-INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:6' bound to instance 'segundero1' of component 'TIMER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:144]
-INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:6' bound to instance 'reloj1' of component 'COUNTER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'COUNTER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:21]
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:13' bound to instance 'segundero1' of component 'TIMER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:144]
+INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:6' bound to instance 'reloj1' of component 'COUNTER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'COUNTER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:21]
 	Parameter DIGITS bound to: 6 - type: integer 
 	Parameter N bound to: 24'b001110100110101001101010 
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 3 - type: integer 
-WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDCNTR' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized1' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized1' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized1' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized1' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized3' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized3' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 6 - type: integer 
-WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized3' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized3' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
 	Parameter N bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'cj' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:60]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'c0' of component 'BCDCNTR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'COUNTER' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:21]
-INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:6' bound to instance 'cronometro1' of component 'COUNTER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:160]
-INFO: [Synth 8-3491] module 'TEMPORIZADOR' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:6' bound to instance 'temporizador1' of component 'TEMPORIZADOR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'TEMPORIZADOR' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:20]
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcdcntr.vhd:7' bound to instance 'c0' of component 'BCDCNTR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'COUNTER' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:21]
+INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Counter.vhd:6' bound to instance 'cronometro1' of component 'COUNTER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:160]
+INFO: [Synth 8-3491] module 'TEMPORIZADOR' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:6' bound to instance 'temporizador1' of component 'TEMPORIZADOR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'TEMPORIZADOR' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:20]
 	Parameter DIGITS bound to: 6 - type: integer 
 	Parameter N bound to: 24'b001110100110101001101010 
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 3 - type: integer 
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDTEMP' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized1' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized1' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized1' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized1' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized3' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized3' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 6 - type: integer 
-WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized3' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized3' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:20]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
 	Parameter N bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'cj' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:60]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'c0' of component 'BCDTEMP' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'TEMPORIZADOR' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:20]
-INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:6' bound to instance 'cambiar_hora_temp1' of component 'CAMBIAR_HORA' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:178]
-INFO: [Synth 8-638] synthesizing module 'CAMBIAR_HORA' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:23]
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bcd_temp.vhd:7' bound to instance 'c0' of component 'BCDTEMP' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'TEMPORIZADOR' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/TEMP.vhd:20]
+INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:6' bound to instance 'cambiar_hora_temp1' of component 'CAMBIAR_HORA' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'CAMBIAR_HORA' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:23]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'CAMBIAR_HORA' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:23]
-INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:6' bound to instance 'cambiar_hora_reloj1' of component 'CAMBIAR_HORA' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:189]
-WARNING: [Synth 8-614] signal 'current_global_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
-WARNING: [Synth 8-614] signal 'current_cambiar_hora_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
-WARNING: [Synth 8-614] signal 'current_crono_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
-WARNING: [Synth 8-614] signal 'current_temp_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
-INFO: [Synth 8-256] done synthesizing module 'fsm' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:16]
-	Parameter DIGITS bound to: 6 - type: integer 
-	Parameter RFRSH_RATE bound to: 100 - type: integer 
-	Parameter CLK_FREQ bound to: 100000000 - type: integer 
-INFO: [Synth 8-3491] module 'VisualizadorBlinker' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:6' bound to instance 'vblinker1' of component 'VisualizadorBlinker' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'VisualizadorBlinker' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'CAMBIAR_HORA' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:23]
+INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Cambiar_hora.vhd:6' bound to instance 'cambiar_hora_reloj1' of component 'CAMBIAR_HORA' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:189]
+WARNING: [Synth 8-614] signal 'current_global_state' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
+WARNING: [Synth 8-614] signal 'current_cambiar_hora_state' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
+WARNING: [Synth 8-614] signal 'current_crono_state' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
+WARNING: [Synth 8-614] signal 'current_temp_state' is read in the process but is not in the sensitivity list [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:216]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fsm.vhd:16]
 	Parameter DIGITS bound to: 6 - type: integer 
 	Parameter RFRSH_RATE bound to: 100 - type: integer 
 	Parameter CLK_FREQ bound to: 100000000 - type: integer 
-	Parameter DIGITS bound to: 6 - type: integer 
-	Parameter RFRSH_RATE bound to: 100 - type: integer 
-	Parameter CLK_FREQ bound to: 100000000 - type: integer 
-INFO: [Synth 8-3491] module 'VISUALIZER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:25' bound to instance 'visualizador1' of component 'VISUALIZER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'VISUALIZER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:41]
+INFO: [Synth 8-3491] module 'VisualizadorBlinker' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:8' bound to instance 'vblinker1' of component 'VisualizadorBlinker' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'VisualizadorBlinker' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:27]
 	Parameter DIGITS bound to: 6 - type: integer 
 	Parameter RFRSH_RATE bound to: 100 - type: integer 
 	Parameter CLK_FREQ bound to: 100000000 - type: integer 
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'MUXER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:26' bound to instance 'muxer1' of component 'MUXER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:91]
-INFO: [Synth 8-638] synthesizing module 'MUXER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:37]
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'VISUALIZER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:9' bound to instance 'visualizador1' of component 'VISUALIZER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'VISUALIZER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:25]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUXER' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:37]
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'MUXER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:9' bound to instance 'muxer1' of component 'MUXER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'MUXER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:20]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUXER' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/muxer.vhd:20]
 	Parameter MODULO bound to: 166666 - type: integer 
-INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:6' bound to instance 'timer1' of component 'TIMER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'TIMER__parameterized2' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:17]
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:13' bound to instance 'timer1' of component 'TIMER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TIMER__parameterized2' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:24]
 	Parameter MODULO bound to: 166666 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'TIMER__parameterized2' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'TIMER__parameterized2' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/timer.vhd:24]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'SCANNER' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:23' bound to instance 'scanner1' of component 'SCANNER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:111]
-INFO: [Synth 8-638] synthesizing module 'SCANNER' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:35]
+INFO: [Synth 8-3491] module 'SCANNER' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:7' bound to instance 'scanner1' of component 'SCANNER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'SCANNER' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:19]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SCANNER' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:35]
-INFO: [Synth 8-3491] module 'BIN2SEG' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:6' bound to instance 'bin2seg1' of component 'BIN2SEG' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'BIN2SEG' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'BIN2SEG' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'VISUALIZER' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:41]
-INFO: [Synth 8-3491] module 'Blinker' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:11' bound to instance 'blinker1' of component 'Blinker' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'Blinker' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'Blinker' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'SCANNER' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/scanner.vhd:19]
+INFO: [Synth 8-3491] module 'BIN2SEG' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:9' bound to instance 'bin2seg1' of component 'BIN2SEG' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'BIN2SEG' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'BIN2SEG' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/bin2seg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VISUALIZER' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/visualizer.vhd:25]
+INFO: [Synth 8-3491] module 'Blinker' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:11' bound to instance 'blinker1' of component 'Blinker' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Blinker' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Blinker' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/blinker.vhd:21]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'Int09ToBcd' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:7' bound to instance 'conversor_a_bcd' of component 'Int09ToBcd' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'Int09ToBcd' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:15]
+INFO: [Synth 8-3491] module 'Int09ToBcd' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:11' bound to instance 'conversor_a_bcd' of component 'Int09ToBcd' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Int09ToBcd' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:19]
 	Parameter DIGITS bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Int09ToBcd' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Int09ToBcd' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/Int09ToBcd.vhd:19]
 	Parameter CLK_FREQ bound to: 50000000 - type: integer 
-INFO: [Synth 8-3491] module 'GenOndaCuadrada' declared at 'C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:6' bound to instance 'squared_wave1' of component 'GenOndaCuadrada' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'GenOndaCuadrada' [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:13]
+INFO: [Synth 8-3491] module 'GenOndaCuadrada' declared at 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:12' bound to instance 'squared_wave1' of component 'GenOndaCuadrada' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'GenOndaCuadrada' [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:19]
 	Parameter CLK_FREQ bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'GenOndaCuadrada' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'VisualizadorBlinker' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'fpga_reloj' (0#1) [C:/FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'GenOndaCuadrada' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/GenOndaCuadrada.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'VisualizadorBlinker' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/VisualizadorBlinker.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'fpga_reloj' (0#1) [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/sources_1/imports/301123 backup/fpga_reloj.vhd:18]
 WARNING: [Synth 8-7129] Port reset_n in module Blinker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDTEMP__parameterized3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDTEMP is either unconnected or has no load
@@ -182,62 +182,62 @@ WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDCNTR__parameterized3 is eith
 WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDCNTR is either unconnected or has no load
 WARNING: [Synth 8-7129] Port BCD_IN[2] in module BCDCNTR is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1422.066 ; gain = 553.246
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1421.121 ; gain = 552.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1422.066 ; gain = 553.246
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1421.121 ; gain = 552.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1422.066 ; gain = 553.246
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1421.121 ; gain = 552.793
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1422.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1421.121 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sblink'. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:13]
+Parsing XDC File [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sblink'. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:13]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'mblink'. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'mblink'. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'hblink'. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'hblink'. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'cen'. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'cen'. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_reloj_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.srcs/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_reloj_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_reloj_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1520.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1476.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1520.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1476.461 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_global_state_reg' in module 'fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'current_cambiar_hora_state_reg' in module 'fsm'
@@ -279,7 +279,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_temp_state_reg' us
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_crono_state_reg' using encoding 'sequential' in module 'fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -341,25 +341,25 @@ WARNING: [Synth 8-7129] Port BCD_IN[5][2] in module COUNTER is either unconnecte
 WARNING: [Synth 8-7129] Port BCD_IN[3][3] in module COUNTER is either unconnected or has no load
 WARNING: [Synth 8-7129] Port BCD_IN[1][3] in module COUNTER is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -377,37 +377,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -439,18 +439,18 @@ Report Cell Usage:
 |14    |OBUF   |    16|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1520.059 ; gain = 553.246
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.059 ; gain = 651.238
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1476.461 ; gain = 552.793
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1476.461 ; gain = 608.133
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1520.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1476.461 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1481.594 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 40 instances were transformed.
   LDC => LDCE: 40 instances
@@ -459,9 +459,9 @@ Synth Design complete | Checksum: d908801b
 INFO: [Common 17-83] Releasing license: Synthesis
 112 Infos, 33 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1520.059 ; gain = 1059.469
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1481.594 ; gain = 1023.566
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1520.059 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/FPGA/project_4/project_4.runs/synth_1/fpga_reloj.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1481.594 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/synth_1/fpga_reloj.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fpga_reloj_utilization_synth.rpt -pb fpga_reloj_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 19:22:18 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 18:05:43 2023...

@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Dec 23 18:11:02 2023
-# Process ID: 1416
+# Start of session at: Sat Dec 23 18:10:00 2023
+# Process ID: 14932
 # Current directory: C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/impl_1
 # Command line: vivado.exe -log fpga_reloj.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_reloj.tcl -notrace
 # Log file: C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/impl_1/fpga_reloj.vdi

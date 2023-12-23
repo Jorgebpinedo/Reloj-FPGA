@@ -1,22 +1,5 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    16:31:03 11/21/2019 
--- Design Name: 
--- Module Name:    muxer - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+--Implementa un multiplexor que elige el canal a activar en función de la entrada de selección.
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -36,28 +19,32 @@ end MUXER;
 
 architecture BEHAVIORAL of MUXER is
 
+-- Comprueba que únicamente uno de los bits de la secuencia generada por el scanner está a 0.
   function has_one_zero(signal data : std_logic_vector) return boolean is
     variable count : natural := 0;
   begin
     for i in data'high downto data'low loop
       if data(i) = '0' then
-        count := count + 1;
+        count := count + 1; -- Contador del número de bits a 0
       end if;
     end loop;
-    return count = 1;
+    return count = 1; -- Devuelve 1 siempre que solamente uno de los bits esté a 0
   end function;
 
+-- Localiza la posición del bit de la secuencia que está a 0
   function msz(signal data : std_logic_vector) return integer is
   begin
     for i in data'high downto data'low loop
       if data(i) = '0' then
-        return i;
+        return i; -- Devuelve la posición del bit que está a 0
       end if;
     end loop;
-    return integer'low;
+    return integer'low; -- En caso de no encontrar ningún bit a 0 devuelve la posición más baja
   end function;
 
 begin
+-- Habilita la entrada cuyo bit en la secuencia generada por el scanner está a 0
+-- Debe existir un 0 en la secuencia
   BCD_OUT <= BCD_IN(msz(SEL)) when has_one_zero(SEL) else
              (others => '-');
 end BEHAVIORAL;

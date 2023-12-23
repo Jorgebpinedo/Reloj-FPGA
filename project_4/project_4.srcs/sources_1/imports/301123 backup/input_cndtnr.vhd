@@ -1,22 +1,5 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    16:42:59 11/15/2019 
--- Design Name: 
--- Module Name:    input_cndtnr - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Integra SYNCHRNZR y EDGEDTCTR usando la arquitectura structural
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -31,7 +14,7 @@ end INPUT_CNDTNR;
 
 architecture STRUCTURAL of INPUT_CNDTNR is
 
-  component SYNCHRNZR is
+  component SYNCHRNZR is -- Sincronizador
     port ( 
       RESET_N  : in  std_logic;
       CLK      : in  std_logic;
@@ -40,7 +23,7 @@ architecture STRUCTURAL of INPUT_CNDTNR is
     );
   end component;
   
-  component EDGEDTCTR is
+  component EDGEDTCTR is -- Detector de flancos
     port (
       RESET_N  : in  std_logic;
       CLK      : in  std_logic;
@@ -52,6 +35,7 @@ architecture STRUCTURAL of INPUT_CNDTNR is
   signal sync_out : std_logic;
 
 begin
+-- Conexiones de las entidades
   synchro1: SYNCHRNZR
     port map ( 
       RESET_N  => RESET_N,

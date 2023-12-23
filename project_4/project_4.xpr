@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="C:/FPGA/project_4/project_4.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="64c7e159523148f4bd65e55be8cd4fe2"/>
@@ -46,7 +46,7 @@
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="SimulatorLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val="digilentinc.com:nexys4_ddr:part0:1.1"/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../Users/jorge/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store"/>
+    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../../../../../AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -96,7 +96,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/common.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/common.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/common.vhd"/>
           <Attr Name="ImportTime" Val="1701367706"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -104,7 +104,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/Cambiar_hora.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Cambiar_hora.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/Cambiar_hora.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -112,7 +112,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/Counter.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Counter.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/Counter.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,7 +120,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/GenOndaCuadrada.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/GenOndaCuadrada.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/GenOndaCuadrada.vhd"/>
           <Attr Name="ImportTime" Val="1701302697"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -128,7 +128,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/Int09ToBcd.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Int09ToBcd.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/Int09ToBcd.vhd"/>
           <Attr Name="ImportTime" Val="1700924042"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -136,7 +136,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/TEMP.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/TEMP.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/TEMP.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -144,7 +144,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/VisualizadorBlinker.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/VisualizadorBlinker.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/VisualizadorBlinker.vhd"/>
           <Attr Name="ImportTime" Val="1701342970"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -152,7 +152,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/bcd_temp.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bcd_temp.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/bcd_temp.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -160,7 +160,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/bcdcntr.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bcdcntr.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/bcdcntr.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -168,7 +168,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/bin2seg.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/bin2seg.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/bin2seg.vhd"/>
           <Attr Name="ImportTime" Val="1701341036"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -176,7 +176,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/blinker.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/blinker.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/blinker.vhd"/>
           <Attr Name="ImportTime" Val="1701288508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -184,7 +184,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/edgedtctr.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/edgedtctr.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/edgedtctr.vhd"/>
           <Attr Name="ImportTime" Val="1700926737"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -192,7 +192,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/fsm.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fsm.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/fsm.vhd"/>
           <Attr Name="ImportTime" Val="1701368131"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -200,7 +200,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/input_cndtnr.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/input_cndtnr.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/input_cndtnr.vhd"/>
           <Attr Name="ImportTime" Val="1700926737"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -208,7 +208,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/muxer.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/muxer.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/muxer.vhd"/>
           <Attr Name="ImportTime" Val="1700768506"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -216,7 +216,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/scanner.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/scanner.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/scanner.vhd"/>
           <Attr Name="ImportTime" Val="1700768506"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -224,7 +224,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/synchrnzr.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/synchrnzr.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/synchrnzr.vhd"/>
           <Attr Name="ImportTime" Val="1700926737"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -232,7 +232,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/timer.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/timer.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/timer.vhd"/>
           <Attr Name="ImportTime" Val="1700924463"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -240,7 +240,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/visualizer.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/visualizer.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/visualizer.vhd"/>
           <Attr Name="ImportTime" Val="1701340506"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -248,7 +248,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/fpga_reloj.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fpga_reloj.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/fpga_reloj.vhd"/>
           <Attr Name="ImportTime" Val="1701363164"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -257,7 +257,7 @@
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/fsm_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/fsm_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/fsm_tb.vhd"/>
           <Attr Name="ImportTime" Val="1701367897"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -266,7 +266,7 @@
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/reset2s.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/reset2s.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/reset2s.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -275,7 +275,7 @@
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/top.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/top.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/top.vhd"/>
           <Attr Name="ImportTime" Val="1701349161"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -284,7 +284,7 @@
       <File Path="$PSRCDIR/sources_1/imports/301123 backup/top_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/top_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/top_tb.vhd"/>
           <Attr Name="ImportTime" Val="1701343098"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -299,7 +299,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/301123 backup/Nexys4DDR_Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/Nexys4DDR_Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/Nexys4DDR_Master.xdc"/>
           <Attr Name="ImportTime" Val="1701274534"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -320,7 +320,7 @@
       <File Path="$PSRCDIR/sim_1/imports/301123 backup/tb_cambiar_hora.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../301123 backup/tb_cambiar_hora.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../FPGA/301123 backup/tb_cambiar_hora.vhd"/>
           <Attr Name="ImportTime" Val="1701267956"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

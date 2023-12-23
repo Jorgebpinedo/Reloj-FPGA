@@ -1,3 +1,9 @@
+--Transforma la señal de reloj por flanco en una señal de reloj por nivel, de tipo cuadrada. 
+--Su funcionamiento se basa en un contador de flancos del reloj de entrada. 
+--Cuando se llegue al valor indicado en CLK_FREQ la señal de salida cambiará de valor y se mantendrá en el nivel correspondiente 
+--hasta que la siguiente cuenta vuelva a alcanzar CLK_FREQ.
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -18,9 +24,9 @@ begin
 p1: process(clk)
 begin
     if rising_edge(clk) then
-        cont <= (cont + 1) mod CLK_FREQ;
+        cont <= (cont + 1) mod CLK_FREQ; -- En cada flanco de reloj aumenta en 1 la cuenta
         if cont = CLK_FREQ - 1 then
-            clk_squared_s <= not clk_squared_s;
+            clk_squared_s <= not clk_squared_s; -- Cuando se llegue a CLK_FREQ - 1 se cambia el nivel de la señal cuadrada
         end if;
     end if;
 end process;

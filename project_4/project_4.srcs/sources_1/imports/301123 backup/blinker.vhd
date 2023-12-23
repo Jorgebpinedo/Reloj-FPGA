@@ -21,14 +21,18 @@ end entity;
 architecture bhvl of Blinker is 
 
 begin
+-- Parpadean los segundos si seg_blink está a 1
     digits_out_n(1 downto 0) <= (others => '1') when (clk_seg = '1' and seg_blink = '1' and 
-                                (digits_in_n(1) = '0' or digits_in_n(0) = '0')) else digits_in_n(1 downto 0);
+                                (digits_in_n(1) = '0' or digits_in_n(0) = '0')) else digits_in_n(1 downto 0); 
                                 
+-- Parpadean los minutos si min_blink está a 1
     digits_out_n(3 downto 2) <= (others => '1') when (clk_seg = '1' and min_blink = '1' and 
                                 (digits_in_n(3) = '0' or digits_in_n(2) = '0')) else digits_in_n(3 downto 2);
-
+                                
+-- Parpadean las horas si h_blink está a 1
     digits_out_n(5 downto 4) <= (others => '1') when (clk_seg = '1' and h_blink = '1' and 
                                 (digits_in_n(5) = '0' or digits_in_n(4) = '0')) else digits_in_n(5 downto 4);
-                                
+            
+-- Los últimos displays siempre van a estar apagados                    
     digits_out_n(7 downto 6) <= digits_in_n(7 downto 6);
 end architecture;

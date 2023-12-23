@@ -1,22 +1,6 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    16:43:54 11/15/2019 
--- Design Name: 
--- Module Name:    visualizer - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+--Combina los componentes timer, muxer, scanner y bin2seg para indicar el dígito que se mostrará en los displays 
+--y qué displays estarán encendidos en un determinado momento. 
+
 library ieee;
 use ieee.std_logic_1164.all;
 

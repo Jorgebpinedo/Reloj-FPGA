@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Dec  4 19:22:18 2023
+| Date         : Sat Dec 23 18:05:43 2023
 | Host         : Jorge running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fpga_reloj_utilization_synth.rpt -pb fpga_reloj_utilization_synth.pb
 | Design       : fpga_reloj

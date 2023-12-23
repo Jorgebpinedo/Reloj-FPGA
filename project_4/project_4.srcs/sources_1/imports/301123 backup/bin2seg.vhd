@@ -1,3 +1,6 @@
+--Implementa un conversor de binario a bcd. 
+--Simplemente se trata de representar la tabla de verdad y escribirla en forma de código en formato dataflow:
+
 library ieee;
 use ieee.std_logic_1164.all;
 

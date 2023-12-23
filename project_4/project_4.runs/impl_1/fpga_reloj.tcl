@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/FPGA/project_4/project_4.runs/impl_1/fpga_reloj.tcl"
+  variable script "C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.runs/impl_1/fpga_reloj.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -128,11 +127,9 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
-  set_param synth.incrementalSynthesisCache C:/FPGA/project_4/.Xil/Vivado-11412-Jorge/incrSyn
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 4  }
   open_checkpoint fpga_reloj_routed.dcp
-  set_property webtalk.parent_dir C:/FPGA/project_4/project_4.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/jorge/OneDrive/Documentos/Universidad/4º curso/Sistemas electrónicos digitales/Trabajo FPGA/Reloj-FPGA/project_4/project_4.cache/wt} [current_project]
 set_property TOP fpga_reloj [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
