@@ -1,3 +1,8 @@
+-- Entidad cambiar hora en la que mediante los flancos de subida de CLK, ce_n = 1 y los INC (de seg, min y horas), podemos seleccionar cada grupo de digitos (de seg, min y horas) para ir aumentando los numeros en cambiar hora.
+-- Si el Reset esta a 0 se pondrian todos los digitos a 0.
+-- Si el digito es 9 entonces en la siguiente iteracion se aumentaria 1 a el siguiente digito y este anterior pasaria a ser 0 (para el primer digito de seg, min y horas).
+-- Cuando se llega a las 24h todos los digitos se ponen a 0.
+
 library ieee;
 use ieee.std_logic_1164.all;
 

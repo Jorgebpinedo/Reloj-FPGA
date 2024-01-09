@@ -1,3 +1,4 @@
+--Test bench de la entidad fpga_reloj
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

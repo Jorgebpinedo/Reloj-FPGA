@@ -1,3 +1,6 @@
+-- Componente simple que cuenta de 9 a 0 cuando detecte que CLK  y CIN esten a 1.
+-- SI detecta que el reset esta a 0 reinicia la cuenta hasta el ulitmo valor almacenado y si ve que TERMINATE esta a 0, la cuenta adquiere el valor N-1.
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

@@ -1,3 +1,5 @@
+-- Test bench de la entidad cambiar hora
+
 library ieee;
 use ieee.std_logic_1164.all;
 

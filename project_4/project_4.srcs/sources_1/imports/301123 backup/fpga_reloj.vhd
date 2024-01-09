@@ -1,3 +1,6 @@
+-- Diseño del reloj global (fpga_reloj) integrando mediante una arquitectura beheavioral los componentes fsm, Visualizador, Sincronizador de entradas y las señales de reloj.
+--Estos componentes seran definidos en otros documentos aguas abajo.
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

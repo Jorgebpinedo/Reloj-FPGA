@@ -1,3 +1,6 @@
+-- Componente simple que cuenta de 0 a 9 cuando detecte que CLK  y CIN esten a 1.
+-- SI detecta que el reset esta a 0 reinicia la cuenta y si ve que LOAD esta a 1, la cuenta adquiere el valor que tenga BCD_IN.
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

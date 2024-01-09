@@ -1,3 +1,8 @@
+-- Componente Temporizador mediante el cual definimos su funcionamiento instanciando un componente BCDTEMP.
+-- Este se basa en un vector de 6 digitos con los siguientes valores (3,10,6,10,6,10).
+-- Esta cuenta se basa en recorrer el vector, donde la cuenta del primer digito del segundero es independiente, y la cuenta del resto de digitos dependen del anterior (decrementando 1 cuando el anterior ha llegado al numero de bits maximo permitido).
+-- Este acaba la cuenta cuando Terminate esta a 0, que es cuando todos los digitos del BCD_OUT estan a 0.
+
 library ieee;
 use ieee.std_logic_1164.all;
 

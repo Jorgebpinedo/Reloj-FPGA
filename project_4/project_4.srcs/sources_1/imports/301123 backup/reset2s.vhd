@@ -1,3 +1,6 @@
+-- Desplaza los dos ultimos bits de sreg y se sustituye el ultimo por el SYNC_RESET. 
+-- Este detectara que hay EDGE cuando todos los bits sean 1.
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity reset2s is

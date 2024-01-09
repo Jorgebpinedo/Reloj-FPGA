@@ -1,3 +1,8 @@
+-- La fms opera con las entradas definidas en fpga_reloj estableciendo dos tiempos, estado actual y estado siguiente. 
+-- En ambos tiempos tenemos 4 estados predefinidos: estado global (reloj), cronometro, temporizador y cambiar hora.
+-- Esta fsm esta compuesta en cada uno de estos estados por fsm locales que estan definidas abajo.
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -8,7 +13,8 @@ entity fsm is
     generic(DIGITS : positive := 6);
     port( clk, reset_n, modo, pausar_reanudar, chorag, reset_button : in std_logic;
           BCD_OUT : out int0_9_vector(DIGITS - 1 downto 0);
-          seg_blink, min_blink, h_blink : out std_logic;
+          seg_blink, min_blink, h_blink : out std_logic
+          ;
           state_g, state_c: out states
           );
 end fsm;
@@ -99,6 +105,7 @@ state_g <= current_global_state;
 state_c <= current_temp_state;
 
 -- Cambiar el valor del temporizador
+--Establecemos ce_chora_temp cuando estemos en temporizador y estemos en alguno de los modos de cambio de los valores del temporizador.
 ce_chora_temp <= '1' when (current_global_state = TEMP and 
                 (current_temp_state = CAMBIAR_SEG or current_temp_state = CAMBIAR_MIN or current_temp_state = CAMBIAR_H)) else '0';
 inc_seg_temp <= pausar_reanudar when (current_global_state = TEMP and current_temp_state = CAMBIAR_SEG and
@@ -109,6 +116,7 @@ inc_h_temp <= pausar_reanudar when (current_global_state = TEMP and current_temp
  reset_button /= '1') else '0';
  
  -- Cambiar horas reloj.
+--Establecemos ce_chora_reloj cuando estemos en cambiar_hora_g y estemos en alguno de los modos de cambio de los valores de reloj.
  load_reloj <= '1' when (current_global_state = CAMBIAR_HORA_G) else '0';
  ce_chora_reloj <= '1' when (current_global_state = CAMBIAR_HORA_G and 
                 (current_cambiar_hora_state  = CAMBIAR_SEG or current_cambiar_hora_state  = CAMBIAR_MIN or current_cambiar_hora_state  = CAMBIAR_H)) else '0';
@@ -120,6 +128,7 @@ inc_h_reloj <= pausar_reanudar when (current_global_state = CAMBIAR_HORA_G and c
  reset_button /= '1') else '0';
  
 -- Blinkers
+--Asignacion de los blinkers dependiendo de si estamos en segundos, minutos y horas; en los modos cambiar hora (de reloj y temporizador) y confirmar.
 seg_blink <= '1' when ((current_global_state = TEMP and current_temp_state = CAMBIAR_SEG)
  or (current_global_state = CAMBIAR_HORA_G and current_cambiar_hora_state  = CAMBIAR_SEG)
  or (current_global_state = CAMBIAR_HORA_G and current_cambiar_hora_state = CONFIRMAR)
@@ -140,6 +149,8 @@ reset_crono_n <= '0' when (current_global_state = CRONO and (current_crono_state
 -- Temporizador
 ce_temp <= '1' when current_temp_state = TEMPORIZANDO else '0';
 load_temp_n <= '1' when (current_temp_state = TEMPORIZANDO or current_temp_state = PAUSA) else '0'; 
+
+-- PORT MAP de cada componente empleado en la fsm.
 
 segundero1: timer 
         generic map(modulo => 1E8+1)-- 1E8+1 para cargarlo en la fpga
@@ -197,6 +208,8 @@ cambiar_hora_reloj1: CAMBIAR_HORA
             BCD_OUT => bcd_in_reloj
         );
 
+--Logica de state_register: predefinimos como estado inicial el reloj, en el modo cambio en segundos (en reloj y temporizador) y el cornometro lo pausamos.
+--Cuando se detecte un flanco de subida y estemos pulsando el reset cambiaremos de estado o cambiaremos de estado en cambiar hora. 
 
 state_register: process(clk, reset_n)
     begin
@@ -222,7 +235,12 @@ nextstate_decoder: process(reset_button, modo, pausar_reanudar, chorag)
         next_temp_state <= current_temp_state;
         
         -- Máquina de estados global
+        -- EL avance es el siguiente  RELOJ -> CRONO -> TEMP -> RELOJ -> ... y lo realiamos cuando modo este a 1.
+        
         case current_global_state is
+        
+            -- En Reloj hay que cambiar a Cambiar hora siempre y cunado este habilitada la entrada chorag (a 1).
+        
             when RELOJ =>  
                  if modo = '1' then
                     next_global_state <= CRONO;
@@ -241,6 +259,9 @@ nextstate_decoder: process(reset_button, modo, pausar_reanudar, chorag)
                   end if;
                   
                   -- Máquina de estados local de cronómetro
+                  -- En Cronometro habilitamos y desabilitamos la cuenta con una maquina de estados local mediante la entrada pausar_reanudar
+                  -- y el estado Pausar (si esta a 1 pausar_reanudar pasa a Cronometrando) y Cronometrando(si esta a 1 pausar_reanudar pasamos a Pausa).
+                  
                   case current_crono_state is
                     when PAUSA =>
                         if pausar_reanudar = '1' then 
@@ -272,6 +293,12 @@ nextstate_decoder: process(reset_button, modo, pausar_reanudar, chorag)
                 end if;
                 
                 -- Máquina de estados local de temporizador
+                -- En Temporizador realizamos una maquina de estados local para ir cambiando los estados Cambiar segundos, minutos y horas y uno extra para salir del bucle (PAUSA).
+                -- La entrada a este modo y el avance en este lo realizamos mediante el boton reset (cuando este este a 1).
+                -- El avance seria el siguiente: CAMBIAR_SEG -> CAMBIAR_MIN -> CAMBIAR_H -> PAUSA 
+                -- Cuando estemos en PAUSA podemos volver a pasar a cambiar segundos cuando reset este a 1, o que comience a temporizar (estado Temporizando) haciendo la comprobacion cuando pausar_reanudar este a 1.
+                -- Podemos parar el temporizador (pasar de Temporizando a Pausa) poniendo a 1 pausar_reanudar en mitad de la cuenta.
+                
                 case current_temp_state is 
                     when CAMBIAR_SEG => 
                         if reset_button = '1' then
@@ -324,6 +351,12 @@ nextstate_decoder: process(reset_button, modo, pausar_reanudar, chorag)
                 end if;
                 
                 -- Máquina de estados local de cambiar hora
+                -- En Reloj realizamos una maquina de estados local para ir cambiando los estados Cambiar segundos, minutos y horas y uno extra para salir del bucle (Confirmar).
+                -- La entrada a este modo y la salida de este lo relaizamos con chorag (cuando este a 1).
+                -- El avance en este modo lo realizamos mediante el boton reset (cuando este este a 1).
+                -- El avance seria el siguiente: CAMBIAR_SEG -> CAMBIAR_MIN -> CAMBIAR_H -> CONFIRMAR 
+                -- Cuando estemos en Confirmar podemos volver a pasar a cambiar segundos cuando reset este a 1, o que comience a contar (estado RELOJ) haciendo la comprobacion cuando chorag este a 1.
+                
                 case current_cambiar_hora_state is 
                     when CAMBIAR_SEG => 
                         if reset_button = '1' then
@@ -355,6 +388,8 @@ nextstate_decoder: process(reset_button, modo, pausar_reanudar, chorag)
             when others => next_global_state <= RELOJ;
         end case;
     end process;
+ 
+ -- Asignacion de cada salida BCD a su estado correspondiente.
     
 output_decoder: process(clk)
     begin

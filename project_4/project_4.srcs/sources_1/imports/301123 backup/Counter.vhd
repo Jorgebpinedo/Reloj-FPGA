@@ -1,3 +1,8 @@
+-- Es el contador del reloj mediante el cual definimos su funcionamiento instanciando un componente BCDCNTR.
+-- Este se basa en un vector de 6 digitos con los siguientes valores (3,10,6,10,6,10).
+-- Esta cuenta se basa en recorrer el vector, donde la cuenta del primer digito del segundero es independiente, y la cuenta del resto de digitos dependen del anterior (incrementando 1 cuando el anterior ha llegado al numero de bits maximo permitido).
+-- Si la cuenta llega a 24 h, el reloj se reinicia.
+
 library ieee;
 use ieee.std_logic_1164.all;
 
