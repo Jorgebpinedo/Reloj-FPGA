@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1704884067">
+  <File Type="ROUTE-PWR" Name="fpga_reloj_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fpga_reloj.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="fpga_reloj_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fpga_reloj_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="fpga_reloj_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="fpga_reloj.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fpga_reloj_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="fpga_reloj_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="fpga_reloj_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fpga_reloj_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fpga_reloj_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fpga_reloj.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fpga_reloj_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fpga_reloj_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fpga_reloj_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fpga_reloj_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fpga_reloj_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fpga_reloj_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fpga_reloj_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fpga_reloj_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fpga_reloj_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fpga_reloj_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fpga_reloj_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="fpga_reloj.bin"/>
+  <File Type="PLACE-TIMING" Name="fpga_reloj_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="fpga_reloj_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="fpga_reloj_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fpga_reloj_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="fpga_reloj.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fpga_reloj_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fpga_reloj_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fpga_reloj_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="fpga_reloj.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="fpga_reloj_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fpga_reloj_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fpga_reloj_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fpga_reloj_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fpga_reloj_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fpga_reloj_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fpga_reloj_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fpga_reloj_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fpga_reloj_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fpga_reloj_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="fpga_reloj_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="fpga_reloj_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fpga_reloj_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fpga_reloj_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fpga_reloj_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fpga_reloj_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fpga_reloj_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fpga_reloj_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fpga_reloj_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fpga_reloj_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fpga_reloj_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fpga_reloj_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fpga_reloj_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fpga_reloj_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fpga_reloj_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fpga_reloj_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fpga_reloj_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="fpga_reloj.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fpga_reloj_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fpga_reloj_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="fpga_reloj.nky"/>
+  <File Type="BITSTR-BMM" Name="fpga_reloj_bd.bmm"/>
+  <File Type="PDI-FILE" Name="fpga_reloj.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="fpga_reloj_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="fpga_reloj_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="fpga_reloj.rcfi"/>
+  <File Type="CFI_FILE" Name="fpga_reloj.cfi"/>
+  <File Type="RNPI_FILE" Name="fpga_reloj.rnpi"/>
+  <File Type="NPI_FILE" Name="fpga_reloj.npi"/>
+  <File Type="RBD_FILE" Name="fpga_reloj.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fpga_reloj.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="fpga_reloj.sysdef"/>
+  <File Type="BG-BGN" Name="fpga_reloj.bgn"/>
+  <File Type="BG-DRC" Name="fpga_reloj.drc"/>
+  <File Type="RDI-RDI" Name="fpga_reloj.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="fpga_reloj_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="fpga_reloj_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/common.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/common.vhd"/>
+        <Attr Name="ImportTime" Val="1701367706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/Cambiar_hora.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/Cambiar_hora.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/Counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/Counter.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/GenOndaCuadrada.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/GenOndaCuadrada.vhd"/>
+        <Attr Name="ImportTime" Val="1703350919"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/Int09ToBcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/Int09ToBcd.vhd"/>
+        <Attr Name="ImportTime" Val="1703350957"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/TEMP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/TEMP.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/VisualizadorBlinker.vhd"/>
+        <Attr Name="ImportTime" Val="1703350838"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/bcd_temp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/bcd_temp.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/bcdcntr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/bcdcntr.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/bin2seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/bin2seg.vhd"/>
+        <Attr Name="ImportTime" Val="1703350127"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/blinker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/blinker.vhd"/>
+        <Attr Name="ImportTime" Val="1703350773"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/edgedtctr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/edgedtctr.vhd"/>
+        <Attr Name="ImportTime" Val="1703350986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/fsm.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/fsm.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/input_cndtnr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/input_cndtnr.vhd"/>
+        <Attr Name="ImportTime" Val="1703350995"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/muxer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/muxer.vhd"/>
+        <Attr Name="ImportTime" Val="1703351041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/scanner.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/scanner.vhd"/>
+        <Attr Name="ImportTime" Val="1703351049"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/synchrnzr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/synchrnzr.vhd"/>
+        <Attr Name="ImportTime" Val="1703350976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/timer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/timer.vhd"/>
+        <Attr Name="ImportTime" Val="1703350627"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/visualizer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/visualizer.vhd"/>
+        <Attr Name="ImportTime" Val="1703350657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/fpga_reloj.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/fpga_reloj.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/fsm_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/fsm_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/reset2s.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/reset2s.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/tb_cambiar_hora.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/tb_cambiar_hora.vhd"/>
+        <Attr Name="ImportTime" Val="1704883168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/top.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/top.vhd"/>
+        <Attr Name="ImportTime" Val="1704883169"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nueva carpeta/top_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/top_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1704883169"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga_reloj"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nueva carpeta/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1701381061"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

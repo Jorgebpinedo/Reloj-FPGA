@@ -1,0 +1,460 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jan 10 11:54:32 2024
+# Process ID: 19760
+# Current directory: C:/FPGA/project_5/project_5.runs/synth_1
+# Command line: vivado.exe -log fpga_reloj.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_reloj.tcl
+# Log file: C:/FPGA/project_5/project_5.runs/synth_1/fpga_reloj.vds
+# Journal file: C:/FPGA/project_5/project_5.runs/synth_1\vivado.jou
+# Running On: Jorge, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 8356 MB
+#-----------------------------------------------------------
+source fpga_reloj.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 455.051 ; gain = 186.305
+Command: synth_design -top fpga_reloj -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21216
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1304.387 ; gain = 438.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_reloj' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:21]
+	Parameter MODULO bound to: 100000001 - type: integer 
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:13' bound to instance 'segundero1' of component 'TIMER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TIMER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:24]
+	Parameter MODULO bound to: 100000001 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TIMER' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:24]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:6' bound to instance 'sync_modo1' of component 'INPUT_CNDTNR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'INPUT_CNDTNR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:15]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/synchrnzr.vhd:9' bound to instance 'synchro1' of component 'SYNCHRNZR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/synchrnzr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/synchrnzr.vhd:18]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/edgedtctr.vhd:10' bound to instance 'edgedtctr1' of component 'EDGEDTCTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/edgedtctr.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/edgedtctr.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'INPUT_CNDTNR' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:15]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:6' bound to instance 'sync_pausar_reanudar1' of component 'INPUT_CNDTNR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:101]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:6' bound to instance 'sync_chorag1' of component 'INPUT_CNDTNR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:109]
+INFO: [Synth 8-3491] module 'INPUT_CNDTNR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/input_cndtnr.vhd:6' bound to instance 'sync_reset_button1' of component 'INPUT_CNDTNR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:117]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:12' bound to instance 'fsm1' of component 'fsm' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:22]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter MODULO bound to: 100000001 - type: integer 
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:13' bound to instance 'segundero1' of component 'TIMER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:155]
+INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:11' bound to instance 'reloj1' of component 'COUNTER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'COUNTER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:26]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter N bound to: 24'b001110100110101001101010 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized1' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized1' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDCNTR__parameterized3' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'LOAD' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNTR__parameterized3' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:65]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'cj' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:65]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDCNTR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcdcntr.vhd:10' bound to instance 'c0' of component 'BCDCNTR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'COUNTER' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:26]
+INFO: [Synth 8-3491] module 'COUNTER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Counter.vhd:11' bound to instance 'cronometro1' of component 'COUNTER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:171]
+INFO: [Synth 8-3491] module 'TEMPORIZADOR' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:11' bound to instance 'temporizador1' of component 'TEMPORIZADOR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'TEMPORIZADOR' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:25]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter N bound to: 24'b001110100110101001101010 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized1' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized1' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDTEMP__parameterized3' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'BCDTEMP__parameterized3' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:23]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:65]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'cj' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:65]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'BCDTEMP' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bcd_temp.vhd:10' bound to instance 'c0' of component 'BCDTEMP' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'TEMPORIZADOR' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/TEMP.vhd:25]
+INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Cambiar_hora.vhd:11' bound to instance 'cambiar_hora_temp1' of component 'CAMBIAR_HORA' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'CAMBIAR_HORA' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Cambiar_hora.vhd:28]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CAMBIAR_HORA' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Cambiar_hora.vhd:28]
+INFO: [Synth 8-3491] module 'CAMBIAR_HORA' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Cambiar_hora.vhd:11' bound to instance 'cambiar_hora_reloj1' of component 'CAMBIAR_HORA' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:200]
+WARNING: [Synth 8-614] signal 'current_global_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:229]
+WARNING: [Synth 8-614] signal 'current_cambiar_hora_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:229]
+WARNING: [Synth 8-614] signal 'current_crono_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:229]
+WARNING: [Synth 8-614] signal 'current_temp_state' is read in the process but is not in the sensitivity list [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fsm.vhd:22]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'VisualizadorBlinker' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:8' bound to instance 'vblinker1' of component 'VisualizadorBlinker' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'VisualizadorBlinker' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:27]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'VISUALIZER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:9' bound to instance 'visualizador1' of component 'VISUALIZER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'VISUALIZER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:25]
+	Parameter DIGITS bound to: 6 - type: integer 
+	Parameter RFRSH_RATE bound to: 100 - type: integer 
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'MUXER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/muxer.vhd:9' bound to instance 'muxer1' of component 'MUXER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'MUXER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/muxer.vhd:20]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUXER' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/muxer.vhd:20]
+	Parameter MODULO bound to: 166666 - type: integer 
+INFO: [Synth 8-3491] module 'TIMER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:13' bound to instance 'timer1' of component 'TIMER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TIMER__parameterized2' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:24]
+	Parameter MODULO bound to: 166666 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TIMER__parameterized2' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/timer.vhd:24]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'SCANNER' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/scanner.vhd:7' bound to instance 'scanner1' of component 'SCANNER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'SCANNER' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/scanner.vhd:19]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SCANNER' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/scanner.vhd:19]
+INFO: [Synth 8-3491] module 'BIN2SEG' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bin2seg.vhd:9' bound to instance 'bin2seg1' of component 'BIN2SEG' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'BIN2SEG' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bin2seg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'BIN2SEG' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/bin2seg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VISUALIZER' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/visualizer.vhd:25]
+INFO: [Synth 8-3491] module 'Blinker' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/blinker.vhd:11' bound to instance 'blinker1' of component 'Blinker' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Blinker' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/blinker.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Blinker' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/blinker.vhd:21]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Int09ToBcd' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Int09ToBcd.vhd:11' bound to instance 'conversor_a_bcd' of component 'Int09ToBcd' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Int09ToBcd' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Int09ToBcd.vhd:19]
+	Parameter DIGITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Int09ToBcd' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/Int09ToBcd.vhd:19]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'GenOndaCuadrada' declared at 'C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/GenOndaCuadrada.vhd:12' bound to instance 'squared_wave1' of component 'GenOndaCuadrada' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'GenOndaCuadrada' [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/GenOndaCuadrada.vhd:19]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GenOndaCuadrada' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/GenOndaCuadrada.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'VisualizadorBlinker' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/VisualizadorBlinker.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'fpga_reloj' (0#1) [C:/FPGA/project_5/project_5.srcs/sources_1/imports/Nueva carpeta/fpga_reloj.vhd:21]
+WARNING: [Synth 8-7129] Port reset_n in module Blinker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDTEMP__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDTEMP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[2] in module BCDTEMP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDCNTR__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3] in module BCDCNTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[2] in module BCDCNTR is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.680 ; gain = 552.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1417.680 ; gain = 552.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1417.680 ; gain = 552.238
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1417.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sblink'. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mblink'. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hblink'. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cen'. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA/project_5/project_5.srcs/constrs_1/imports/Nueva carpeta/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_reloj_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_reloj_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1498.797 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_global_state_reg' in module 'fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_cambiar_hora_state_reg' in module 'fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_crono_state_reg' in module 'fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_temp_state_reg' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reloj |                               00 |                             0000
+                   crono |                               11 |                             0011
+                    temp |                               10 |                             0010
+          cambiar_hora_g |                               01 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_global_state_reg' using encoding 'sequential' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             cambiar_seg |                             0001 |                             0100
+             cambiar_min |                             1000 |                             0101
+               cambiar_h |                             0100 |                             0110
+               confirmar |                             0010 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_cambiar_hora_state_reg' using encoding 'one-hot' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             cambiar_seg |                            00001 |                             0100
+             cambiar_min |                            10000 |                             0101
+               cambiar_h |                            01000 |                             0110
+                   pausa |                            00100 |                             1000
+            temporizando |                            00010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_temp_state_reg' using encoding 'one-hot' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   pausa |                                0 |                             1000
+           cronometrando |                                1 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_crono_state_reg' using encoding 'sequential' in module 'fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 3     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 27    
+	   2 Input    3 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 5     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               26 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 27    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 7     
+	   2 Input    4 Bit        Muxes := 30    
+	   3 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 7     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 16    
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 18    
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port BCD_IN[5][3] in module TEMPORIZADOR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[5][2] in module TEMPORIZADOR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3][3] in module TEMPORIZADOR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[1][3] in module TEMPORIZADOR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[5][3] in module COUNTER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[5][2] in module COUNTER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[3][3] in module COUNTER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BCD_IN[1][3] in module COUNTER is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:40 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:40 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:40 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    56|
+|3     |LUT1   |    99|
+|4     |LUT2   |    30|
+|5     |LUT3   |   139|
+|6     |LUT4   |   129|
+|7     |LUT5   |    67|
+|8     |LUT6   |    97|
+|9     |FDCE   |    79|
+|10    |FDPE   |    45|
+|11    |FDRE   |   150|
+|12    |LDC    |    40|
+|13    |IBUF   |     6|
+|14    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.797 ; gain = 633.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:44 . Memory (MB): peak = 1498.797 ; gain = 552.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:47 . Memory (MB): peak = 1498.797 ; gain = 633.355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1498.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  LDC => LDCE: 40 instances
+
+Synth Design complete | Checksum: d908801b
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 33 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:01:13 . Memory (MB): peak = 1498.797 ; gain = 1043.746
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1498.797 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA/project_5/project_5.runs/synth_1/fpga_reloj.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_reloj_utilization_synth.rpt -pb fpga_reloj_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 11:56:03 2024...

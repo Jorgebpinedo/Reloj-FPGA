@@ -1,0 +1,250 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jan 10 11:57:44 2024
+| Host         : Jorge running 64-bit major release  (build 9200)
+| Command      : report_drc -file fpga_reloj_drc_routed.rpt -pb fpga_reloj_drc_routed.pb -rpx fpga_reloj_drc_routed.rpx
+| Design       : fpga_reloj
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 41
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 40         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__0/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_2 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[0].digit_0.c0/count_reg[2]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[0].digit_0.c0/count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_3 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[0].digit_0.c0/count_reg[1]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[0].digit_0.c0/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][2]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__1/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1__0/O, cell fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][2]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[2]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__2/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_2 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[2].digit_j.cj/count_reg[2]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[2].digit_j.cj/count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_3 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[2].digit_j.cj/count_reg[1]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[2].digit_j.cj/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][2]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1__0/O, cell fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__3/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][2]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[2]_LDC_i_1__0/O, cell fsm1/cambiar_hora_temp1/count_reg[2]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__4/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_2 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_3 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][2]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1__1/O, cell fsm1/cambiar_hora_temp1/count_reg[3]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_1 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1/O, cell fsm1/cambiar_hora_temp1/count_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][1]_0 is a gated clock net sourced by a combinational pin fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1__1/O, cell fsm1/cambiar_hora_temp1/count_reg[1]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1] is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__2/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_0 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__5/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_1 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__2/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_10 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__9/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__9. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_11 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__4/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_12 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__5/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_13 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__7/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_14 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__10/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__10. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_2 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__4/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_3 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__7/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_4 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__3/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_5 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__3/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_6 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__5/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_7 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__8/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__8. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_8 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__4/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_9 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__6/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__6_n_0 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__6/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__3_n_0 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__3/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__1_n_0 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__1/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__2_n_0 is a gated clock net sourced by a combinational pin fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__2/O, cell fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

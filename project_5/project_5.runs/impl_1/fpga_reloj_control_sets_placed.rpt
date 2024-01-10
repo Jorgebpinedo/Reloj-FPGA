@@ -1,0 +1,213 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jan 10 11:56:58 2024
+| Host         : Jorge running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fpga_reloj_control_sets_placed.rpt
+| Design       : fpga_reloj
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   135 |
+|    Minimum number of control sets                        |   135 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   894 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   135 |
+| >= 0 to < 4        |   120 |
+| >= 4 to < 6        |    11 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           34 |
+| No           | No                    | Yes                    |              70 |           52 |
+| No           | Yes                   | No                     |              40 |           40 |
+| Yes          | No                    | No                     |              33 |           12 |
+| Yes          | No                    | Yes                    |              54 |           41 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                 Clock Signal                                |                            Enable Signal                           |                               Set/Reset Signal                               | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_3                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][2]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][3]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][2]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_2                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_1                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][2]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][3]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_2                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_3                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][2]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][3]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][2]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_2                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_1                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_2                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_2                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_1                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_3                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][1]_0                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_0                                |                1 |              1 |         1.00 |
+|  fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_1                              |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][3]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[5][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[5][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][3]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][3]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][0]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][3]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][3]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][3]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][0]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_2                                |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__3_n_0                   |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][1]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_13   |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_12   |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_11   |                1 |              1 |         1.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_14   |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_7  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__2_n_0                   |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][3]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/ce_temp                                                       | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/ce_temp                                                       | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][2]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/ce_temp                                                       | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/ce_temp                                                       | fsm1/cambiar_hora_temp1/bcd_out_s_reg[0][1]_3                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[4].digit_j.cj/cout_4                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]      |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[4].digit_j.cj/cout_4                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_0    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_1                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_4    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_1                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_6    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_1                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_5    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_1                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_7    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_2                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_2    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_2                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_3    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[1].digit_j.cj/cout_2                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_1    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[3].digit_j.cj/cout_3                                | fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__6_n_0                     |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[3].digit_j.cj/cout_3                                | fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__1_n_0                     |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[3].digit_j.cj/cout_3                                | fsm1/reloj1/g1[4].digit_j.cj/count_reg[1]_LDC_i_1__3_n_0                     |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[3].digit_j.cj/cout_3                                | fsm1/reloj1/g1[4].digit_j.cj/count_reg[3]_LDC_i_1__2_n_0                     |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[0].digit_0.c0/cout_0                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][2]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[0].digit_0.c0/cout_0                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[0].digit_0.c0/cout_0                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[1][1]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_2                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_2                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][2]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_2                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[3][1]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_4                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][1]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_4                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[5][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_1                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_1                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_1                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][1]_3                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[1].digit_j.cj/cout_1                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[2][2]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[3].digit_j.cj/cout_3                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_3                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[3].digit_j.cj/cout_3                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][2]_0                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[3].digit_j.cj/cout_3                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][0]_1                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/temporizador1/g1[3].digit_j.cj/cout_3                         | fsm1/cambiar_hora_temp1/bcd_out_s_reg[4][1]_2                                |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[0].digit_0.c0/cout_0                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_10   |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[0].digit_0.c0/cout_0                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_9    |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/reloj1/g1[0].digit_0.c0/cout_0                                | fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_8    |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_13 |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][1]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_2  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][1]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_3  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_1  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[3][2]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_12 |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][2]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_4  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][3]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_11 |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][3]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_10 |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_14 |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[0][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]    |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[5][1]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_0  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[5][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_6  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][1]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/count_reg[0]_LDC_i_1__6_n_0                   |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][0]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_9  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][1]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_5  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[2][2]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[1]_8  |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[1][2]_0                               |                1 |              1 |         1.00 |
+|  fsm1/reloj1/g1[4].digit_j.cj/count_reg[2]_LDC_i_1__1_n_0                   |                                                                    | fsm1/cambiar_hora_reloj1/bcd_out_s_reg[4][2]_0                               |                1 |              1 |         1.00 |
+|  clk_seg                                                                    | fsm1/cronometro1/g1[1].digit_j.cj/cout_1                           | fsm1/cronometro1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[0] |                1 |              4 |         4.00 |
+|  clk_seg                                                                    | fsm1/cronometro1/g1[3].digit_j.cj/cout_3                           | fsm1/cronometro1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[0] |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_temp1/bcd_out_s[0]_11                            |                                                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_temp1/bcd_out_s[4]_15                            |                                                                              |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_temp1/bcd_out_s[2]_13                            |                                                                              |                1 |              4 |         4.00 |
+|  clk_seg                                                                    | fsm1/ce_crono                                                      | fsm1/cronometro1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[0] |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_reloj1/bcd_out_s[0]_10                           |                                                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_reloj1/bcd_out_s[2]_12                           |                                                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_reloj1/bcd_out_s[4]_14                           |                                                                              |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_reloj1/next_cambiar_hora_state                   |                                                                              |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG                                                        | fsm1/cambiar_hora_temp1/FSM_sequential_current_global_state_reg[1] |                                                                              |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG                                                        | vblinker1/visualizador1/timer1/E[0]                                | vblinker1/visualizador1/timer1/reset_n                                       |                2 |              6 |         3.00 |
+|  clk_seg                                                                    |                                                                    | fsm1/cronometro1/g1[4].digit_j.cj/FSM_sequential_current_global_state_reg[0] |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG                                                        |                                                                    | vblinker1/visualizador1/timer1/reset_n                                       |                5 |             18 |         3.60 |
+|  CLK100MHZ_IBUF_BUFG                                                        |                                                                    |                                                                              |               34 |            117 |         3.44 |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
